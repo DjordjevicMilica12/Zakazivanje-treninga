@@ -19,7 +19,9 @@ Da biste pokrenuli aplikaciju lokalno, potrebno je da klonirajte repozitorijum
    ```
     git clone  https://github.com/DjordjevicMilica12/Zakazivanje-treninga.git
    ```
-potom da otvorite projekat u Visual Studio i da ga pokrenete
+2. Otvorite projekat u Visual Studio:
+- Pokrenite Visual Studio.
+- Idite na **File > Open > Project/Solution** i otvorite `.sln` fajl u folderu koji ste klonirali.
 
 
 ## Koriscenje
