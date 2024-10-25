@@ -15,8 +15,11 @@ Druga uloga jeste roditelj. Njemu je omoguceno da uclani dete na treninge, kao i
 - Zakazivanje treninga
 
 ## Instalacija
-Da biste pokrenuli aplikaciju lokalno, potrebno je da pratite sledece korake:
-1. Klonirajte repozitorijum:
+Da biste pokrenuli aplikaciju lokalno, potrebno je da klonirajte repozitorijum
+   ```
+    git clone  https://github.com/DjordjevicMilica12/Zakazivanje-treninga.git
+   ```
+potom da otvorite projekat u Visual Studio i da ga pokrenete
 
 
 ## Koriscenje
