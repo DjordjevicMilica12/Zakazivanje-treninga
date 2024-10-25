@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E800AA86-41F3-4369-B1BE-3A5C54826AFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FrmLogin</RootNamespace>
+    <AssemblyName>FrmLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication.cs" />
+    <Compile Include="FrmPocetnaRoditelj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPocetnaRoditelj.Designer.cs">
+      <DependentUpon>FrmPocetnaRoditelj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPocetnaTrener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPocetnaTrener.Designer.cs">
+      <DependentUpon>FrmPocetnaTrener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiController\AddDateGUIController.cs" />
+    <Compile Include="GuiController\AddGUIController.cs" />
+    <Compile Include="GuiController\ChangeDataChildGUIController.cs" />
+    <Compile Include="GuiController\DecaZakazaniTreninziGUIController.cs" />
+    <Compile Include="GuiController\DeleteChild.cs" />
+    <Compile Include="GuiController\DeleteDataGUIControllercs.cs" />
+    <Compile Include="GuiController\DeleteDatumGUIController.cs" />
+    <Compile Include="GuiController\GetAllProgramsGUIController.cs" />
+    <Compile Include="GuiController\LoginGUIController.cs" />
+    <Compile Include="GuiController\OtkaziTreningGUIController.cs" />
+    <Compile Include="GuiController\PrikaziVezbuGUIController.cs" />
+    <Compile Include="GuiController\UbaciVezbuGUIController.cs" />
+    <Compile Include="GuiController\ZakaziTreningGUIController.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiController\MainCoordinator.cs" />
+    <Compile Include="OtkazivanjeClanstva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtkazivanjeClanstva.Designer.cs">
+      <DependentUpon>OtkazivanjeClanstva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtkazivanjeTreninga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtkazivanjeTreninga.Designer.cs">
+      <DependentUpon>OtkazivanjeTreninga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledZakazanihTreninga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledZakazanihTreninga.Designer.cs">
+      <DependentUpon>PregledZakazanihTreninga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikaziVezbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikaziVezbe.Designer.cs">
+      <DependentUpon>PrikaziVezbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PromeniPodatkeDetetu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromeniPodatkeDetetu.Designer.cs">
+      <DependentUpon>PromeniPodatkeDetetu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UbaciVezbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbaciVezbu.Designer.cs">
+      <DependentUpon>UbaciVezbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UclaniDete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UclaniDete.Designer.cs">
+      <DependentUpon>UclaniDete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiController\ZakazaniTreninziGUIController.cs" />
+    <Compile Include="UnosSLobodnogTermina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosSLobodnogTermina.Designer.cs">
+      <DependentUpon>UnosSLobodnogTermina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZakazivanjeTreninga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZakazivanjeTreninga.Designer.cs">
+      <DependentUpon>ZakazivanjeTreninga.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmPocetnaRoditelj.resx">
+      <DependentUpon>FrmPocetnaRoditelj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPocetnaTrener.resx">
+      <DependentUpon>FrmPocetnaTrener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtkazivanjeClanstva.resx">
+      <DependentUpon>OtkazivanjeClanstva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtkazivanjeTreninga.resx">
+      <DependentUpon>OtkazivanjeTreninga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledZakazanihTreninga.resx">
+      <DependentUpon>PregledZakazanihTreninga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikaziVezbe.resx">
+      <DependentUpon>PrikaziVezbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromeniPodatkeDetetu.resx">
+      <DependentUpon>PromeniPodatkeDetetu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UbaciVezbu.resx">
+      <DependentUpon>UbaciVezbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UclaniDete.resx">
+      <DependentUpon>UclaniDete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosSLobodnogTermina.resx">
+      <DependentUpon>UnosSLobodnogTermina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZakazivanjeTreninga.resx">
+      <DependentUpon>ZakazivanjeTreninga.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D034D011-4182-4B8F-B6A9-63DF3E2B0A59}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
