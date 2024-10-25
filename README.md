@@ -28,7 +28,7 @@ Da biste pokrenuli aplikaciju lokalno, potrebno je da klonirajte repozitorijum
 Kada je aplikacija pokrenuta, potrebno je prvo pokrenuti server.
 
 ## Tehnologije
-C#
-SQL Server Management Studio
+- C#
+- SQL Server Management Studio
 
 
